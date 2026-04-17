@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -117,3 +121,138 @@ body {
   .col-lg-12 { width: 100%; }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 3fr 1fr 4fr 10fr 2fr;
+
+  grid-gap: 0.5em;
+  
+  height: 100vh;
+  
+  box-sizing: border-box;
+}
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+
+  background: lightseagreen;
+
+  padding: 0.5em;
+}
+
+.nav {
+  grid-column: 1 / -1;
+  grid-row: 2;
+
+  background: lightsteelblue;
+
+  padding: 0.5em;
+}
+
+.banner {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  
+  background: lightsalmon;
+
+  padding: 0.5em;
+}
+
+.main {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+
+  background: lightcoral;
+
+  padding: 0.5em;
+  
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+
+  gap: 0.5em;
+}
+
+#fotoPrincipal {
+  width: 50em;
+  height: 35em;
+}
+
+.intro {
+  background: lightyellow;
+
+  padding: 0.5em;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0.5em;
+}
+
+.article-1, .article-2 {
+  background: lightgoldenrodyellow;
+
+  padding: 0.5em;
+}
+
+.aside-1 {
+  grid-column: 1;
+  grid-row: 3 / 5;
+
+  background: lightpink;
+
+  padding: 0.5em;
+}
+
+.aside-2 {
+  grid-column: 3;
+  grid-row: 3 / 5;
+
+  background: lightgreen;
+
+  padding: 0.5em;
+}
+
+.aside-3 {
+  grid-column: 3;
+  grid-row: 4;
+
+  background: lightblue;
+
+  padding: 0.5em;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  grid-row: 5;
+
+  background: lightgray;
+
+  padding: 0.5em;
+
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+
+  gap: 0.5em;
+}
+
+.footer-xxs {
+  background: lightcyan;
+
+  padding: 0.5em;
+}
+
+.footer-info {
+  background: lightcyan;
+
+  padding: 0.5em;
+}
+ 
